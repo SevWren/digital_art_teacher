@@ -4,7 +4,7 @@
 ### Required for Planning and Completing a Digital Art Piece  
 ### from Beginning to Completion  
 
-#### Classical Theory • Modern Theory • Stage-by-Stage Guidance  
+#### Classical Theory • Modern Theory • Step-by-Step Guidance  
 #### Fully Research-Grounded • Written for the Human Artist  
 
 | | |
@@ -64,7 +64,7 @@ Content follows two axes: (1) theoretical foundations from classical to modern, 
 | Language | Are consensus-practice claims stated in non-absolute terms ("commonly," "typically," "in many professional workflows") rather than as universal laws? |
 | Scope | Is the content about art theory, construction, or digital art practice — not an adjacent domain that would stretch the corpus beyond its purpose? |
 
-**Staged entries expire after 3 days.** Any entry in `art-theory-pending.md` older than three days is surfaced to the user at the start of the next session for a defer or promote decision. Deferral resets the clock; promotion or rejection closes the entry.
+**Pending entries expire after 3 days.** Any entry in `art-theory-pending.md` older than three days is surfaced to the user at the start of the next session for a defer or promote decision. Deferral resets the clock; promotion or rejection closes the entry.
 
 ---
 
@@ -169,9 +169,9 @@ Understanding diffuse vs. specular reflectance, roughness, and related ideas hel
 
 ---
 
-## 5. COMPLETE DIGITAL PRODUCTION PIPELINE — THEORY MAPPED TO STAGE
+## 5. COMPLETE DIGITAL PRODUCTION PIPELINE — THEORY MAPPED TO STEP
 
-The sequence synthesizes the order of concerns that appears in published professional illustration and concept-art process descriptions. Exact names and counts vary; the order of problems to solve does not. At every stage the actions are things you do.
+The sequence synthesizes the order of concerns that appears in published professional illustration and concept-art process descriptions. Exact names and counts vary; the order of problems to solve does not. At every step the actions are things you do.
 
 ### 5.0 Project definition and constraints
 **Governing theory:** All later formal decisions are constrained by what you lock here.  
@@ -215,7 +215,7 @@ The sequence synthesizes the order of concerns that appears in published profess
 **You can move on when:** Structure is consistent with your references and viewpoint; gesture still reads.
 
 ### 5.5 Refined line / clean structural drawing (optional by style)
-**Governing theory:** Contour quality and edge hierarchy. Some painterly approaches skip a clean line stage; intentional edges remain mandatory.  
+**Governing theory:** Contour quality and edge hierarchy. Some painterly approaches skip a clean line step; intentional edges remain mandatory.  
 **What you do:**  
 • If your style needs line, draw final contours with deliberate weight variation on a new layer.  
 • Hide or lower opacity of rough construction.  
@@ -303,7 +303,7 @@ A pressure-sensitive tablet makes control easier for most people but is not a th
 
 ### 6.4 Non-destructive habits
 • Prefer adjustment layers and masks over permanently changing base pixels when your software allows it.  
-• Keep major stages (construction, value, local color, lighting, detail, adjustments) on separate layer groups so you can revise one without destroying the others.  
+• Keep major steps (construction, value, local color, lighting, detail, adjustments) on separate layer groups so you can revise one without destroying the others.  
 • Never flatten the master file; flatten only copies you export for delivery.
 
 ### 6.5 File naming and folder habits
@@ -342,8 +342,8 @@ Practical starting point drawn from the sources: if print is uncertain, beginnin
 
 All checks below are performed by you on your own screen. The AI cannot see your image and will not pretend to.
 
-### 7.1 Stage-gate habit
-Do not treat a stage as finished until its exit conditions (Section 5) are met. You can review them yourself or ask another person.
+### 7.1 Step-gate habit
+Do not treat a step as finished until its exit conditions (Section 5) are met. You can review them yourself or ask another person.
 
 ### 7.2 Observational checklist you run
 • View at 100 % and at a very small thumbnail size. Note failures at either extreme.  
@@ -389,7 +389,7 @@ A practical synthesis of non-destructive habits reported in professional digital
 • 08_Local_Color  
 • 07_Value_Understructure  
 • 06_Structural_Drawing or Line Art  
-• 05_Construction (hidden or low-opacity after construction stage)  
+• 05_Construction (hidden or low-opacity after construction step)  
 • 04_Thumbnail_Comp (reference only)  
 • 03_Reference_Board (linked or placed, non-printing)  
 • 00_Background / Canvas  

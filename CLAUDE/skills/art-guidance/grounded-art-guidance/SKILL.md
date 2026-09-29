@@ -119,15 +119,21 @@ Show the user in sequence:
 
 ### Approve
 
+**Before writing anything:** if the Conflict check result is FLAG, present this warning to the user:
+
+> **Conflict warning:** This entry contradicts [name the specific claim] in [name the Tier 1 file and section]. Promoting it will introduce a contradiction into the corpus. Proceeding at your explicit direction — you will need to resolve this conflict manually after promotion.
+
+Then proceed with promotion regardless of whether the Conflict check passed or failed.
+
 1. Write the retrieved content to the appropriate file in `art-theory-draft/art-theory/`:
    - If a fitting file exists (e.g., `fundamentals/anatomy-and-gesture.md` for figure/creature anatomy): add a clearly headed section for the new subject.
    - If no fitting file exists: create a new file under `fundamentals/` or the most appropriate subdirectory. Update `art-theory-draft/art-theory/INDEX.md` to list the new file.
 2. Add each source URL to `art-theory-draft/art-theory/sources.md` under a new heading for the subject.
 3. Add each source URL to the Bibliography in `ART THEORY & DIGITAL PRACTICE REFERENCE WIP.md` (Section 10), numbered sequentially.
-4. Update the staging entry in `art-theory-pending.md`: set `status` to PROMOTED and `promoted_to` to the corpus file path.
+4. Update the pending entry in `art-theory-pending.md`: set `status` to PROMOTED and `promoted_to` to the corpus file path.
 5. Save all changed files.
 
-**Done when:** corpus file updated, sources updated in both locations, staging entry marked PROMOTED, all files saved.
+**Done when:** corpus file updated, sources updated in both locations, pending entry marked PROMOTED, all files saved.
 
 ### Reject
 

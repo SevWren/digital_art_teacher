@@ -84,7 +84,7 @@ guidance found during the web search]
 | Source count | 3 or more independent published sources | Fewer than 3 |
 | Source quality | All sources are academic, professional, or institutional | Any source is a personal blog, forum, social media, or unverified wiki |
 | Independence | Each source arrived at its content through separate research | Two or more sources share the same single document as their primary origin |
-| Conflict | Retrieved content does not contradict any Tier 1 claim | Contradiction found — must be named and resolved before promotion |
+| Conflict | Retrieved content does not contradict any Tier 1 claim | Contradiction found — must be named explicitly; agent presents a required warning before promotion proceeds; user may override |
 | Language | Consensus-practice claims use non-absolute language ("commonly," "typically," "often") | Any consensus-practice claim uses "always," "must," or "universally" |
 | Scope | Content is about art theory, construction, or digital art practice | Content extends into an adjacent domain not within the project's purpose |
 

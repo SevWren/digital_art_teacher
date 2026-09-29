@@ -11,7 +11,7 @@ Read `art-theory-pending.md`. Find every entry where `created` is more than 3 da
 For each overdue entry, present the full entry to the user and collect a decision **before any other work begins**:
 
 1. **Defer** — update the entry's `created` field to today's date. The 3-day clock resets from today.
-2. **Promote** — follow the `grounded-art-guidance` skill to run checks and add the entry to the corpus.
+2. **Approve** — follow the `grounded-art-guidance` skill to run the six checks and promote the entry to the corpus.
 
 **Done when:** every entry in `art-theory-pending.md` is either within the 3-day window or has been resolved (promoted, rejected, or deferred with an updated date).
 
