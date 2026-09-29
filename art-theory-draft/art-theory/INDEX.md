@@ -1,8 +1,8 @@
 # Art Theory Knowledge Base — INDEX
 
-**Status:** Work in progress. This repository is the living knowledge store for the project goal: enabling Grok to assist with any question about a digital image the user is planning or currently producing, grounded in professional art theory and digital-art theory.
+**Status:** Work in progress. This directory is the modular knowledge base for the digital art teaching assistant. It covers art theory, construction fundamentals, pipeline guidance, and digital practice. Universal principles live here from the start. Subject-specific entries (anatomy, construction landmarks, surface systems for a given motif) are added through the promotion workflow defined in `CLAUDE.md` and `CLAUDE/skills/art-guidance/grounded-art-guidance/SKILL.md`.
 
-**Location rule (non-negotiable):** All knowledge files live exclusively under `/home/workdir/artifacts/art-theory/`. Never write theory content to `/tmp` or any other ephemeral path. This directory is the only persistent store across sessions.
+**Location rule (non-negotiable):** All knowledge files live under this `art-theory/` directory. Write new theory content here only — never to a temporary or session-scoped path. Subject-specific entries retrieved from the web are staged first in `art-theory-pending.md` (at the repo root) and promoted here only after passing the six-check review and receiving explicit user approval.
 
 ## Purpose
 
@@ -53,8 +53,8 @@ art-theory/
 1. Before answering any question about planning, constructing, correcting, or finishing a digital image, load the relevant file(s) from this tree.
 2. Prefer the most specific file. If the question spans multiple domains, load the pipeline overview plus the governing fundamental(s).
 3. Cite the file path in the response (e.g. “According to `fundamentals/light-and-value.md` …”).
-4. Never invent theory. If the required knowledge is absent, state the gap and, if appropriate, follow the controlled extension procedure defined in the `grounded-art-guidance` skill.
-5. All new or updated theory must be written back into this same tree under `/home/workdir/artifacts/art-theory/`.
+4. When the required knowledge is absent from this tree, state the gap. If the gap is subject-specific (anatomy, construction landmarks, markings, or surface systems for a particular motif), follow `CLAUDE.md` → load `grounded-art-guidance`. Never invent theory.
+5. All new or updated theory promoted from staging must be written into this tree. Update this INDEX whenever a new file is created.
 
 ## Current Population Status (work in progress)
 

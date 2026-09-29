@@ -5,7 +5,7 @@
 ### from Beginning to Completion  
 
 #### Classical Theory • Modern Theory • Stage-by-Stage Guidance  
-#### Fully Research-Grounded • Subject-Agnostic • Written for the Human Artist  
+#### Fully Research-Grounded • Written for the Human Artist  
 
 | | |
 | :--- | :--- |
@@ -13,7 +13,7 @@
 | **How this document is used** | You (the human artist) create every image. An AI may read this document to give you advice. Neither the document nor the AI ever creates, edits, or modifies any image. |
 | **Version** | 5.0 — Continuing to improve theoretical and structural depth; Always ensuring all complete source URLs in bibliography exist. |
 | **Evidence rule** | Every numerical standard and technical claim is drawn from published sources. No invented ranges. Full direct URLs appear in the Bibliography. |
-| **Subject rule** | Fully subject-agnostic. No anatomy, markings, or surface systems for any particular motif. |
+| **Knowledge tiers** | Tier 1: this document, *Art Theory & Digital Practice Reference v5.0*, and *Claims Inventory & Multi-Source Verification*. Tier 2: web retrieval for subject-specific knowledge absent from Tier 1, available on user approval, flagged as unverified until promoted through the three-source standard. See §1.5. |
 
 This document supplies the theory and the practical checkpoints so that when you ask an AI for help at any stage of making a digital artwork, the advice you receive is complete, grounded in established art theory and real technical standards, and free of made-up numbers. You remain the only person who draws, paints, adjusts, and exports the image.
 
@@ -35,14 +35,36 @@ The purpose is to give you a single reference that covers the professional knowl
 
 ### 1.3 Explicit non-assumptions
 • No prior formal art education is assumed; terms are defined.  
-• No specific software is required; principles are tool-agnostic.  
-• No single style register is prescribed.  
-• No specific subject matter is referenced.  
+• No specific software is required; principles are tool-agnostic.
+• No single style register is prescribed.
 • No assumption that you own high-end calibrated studio hardware.  
 • The AI never sees or edits your image; all visual checks are performed by you.  
 
 ### 1.4 Method
 Content follows two axes: (1) theoretical foundations from classical to modern, and (2) a linear production sequence in which each stage receives its governing theory, the actions you take, and the conditions that let you move forward. All numerical and technical claims are tied to published sources listed with full URLs in the Bibliography.
+
+### 1.5 Knowledge tiers and subject-specific guidance
+
+**Tier 1 — verified corpus.** Every response draws first from the three verified source documents: *Art Theory & Digital Practice Reference v5.0*, *Claims Inventory & Multi-Source Verification*, and this working reference. All technical and numerical claims trace to cited published sources within this corpus. Tier 1 is subject-matter agnostic in its universal principles but is not limited to universal content — subject-specific entries are added to it through the promotion process below.
+
+**Tier 2 — web retrieval.** The universal principles in this document (value, composition, gesture, edge control, perspective, color, the 13-stage pipeline) apply to any subject matter. When a user asks about knowledge specific to a particular subject type — anatomy, construction landmarks, markings, or surface systems for a given motif — and that knowledge is absent from Tier 1, the AI may search the web upon explicit user approval. Information retrieved this way:
+
+- Is used in the response with an explicit caveat that it comes from a web source, not the verified corpus.
+- Is written immediately to `art-theory-pending.md` (the staging file) with a creation timestamp, source URLs, and the results of a six-check review.
+- Enters the verified corpus only after passing those checks and receiving explicit user approval to promote.
+
+**The six checks applied to every staged entry:**
+
+| Check | What it asks |
+| :--- | :--- |
+| Source count | Were at least three independent published sources retrieved? |
+| Source quality | Are all sources academic, professional, or institutional — not personal blogs, forums, or unverified wikis? |
+| Independence | Did each source arrive at its content through separate research — not all tracing to a single shared origin? |
+| Conflict | Does the retrieved content contradict anything in Tier 1? If so, the conflict is named explicitly and must be resolved before promotion. |
+| Language | Are consensus-practice claims stated in non-absolute terms ("commonly," "typically," "in many professional workflows") rather than as universal laws? |
+| Scope | Is the content about art theory, construction, or digital art practice — not an adjacent domain that would stretch the corpus beyond its purpose? |
+
+**Staged entries expire after 3 days.** Any entry in `art-theory-pending.md` older than three days is surfaced to the user at the start of the next session for a defer or promote decision. Deferral resets the clock; promotion or rejection closes the entry.
 
 ---
 
@@ -115,7 +137,7 @@ Principles govern how the elements are organized. Core set that appears consiste
 Heinrich Wölfflin’s paired categories remain useful diagnostic tools for analyzing and maintaining stylistic consistency: Linear vs. Painterly, Plane vs. Recession, Closed vs. Open form, Multiplicity vs. Unity, Absolute vs. Relative clarity. They help you keep the same stylistic rules across an entire image.
 
 ### 3.4 Structural and proportional systems (general)
-Regardless of subject, major masses and proportional relationships are established before surface detail. Construction methods (gesture line, envelope, major-mass blocking, cross-contour) appear across figure, object, vehicle, and environment instruction. The requirement to establish structure early is universal; the specific landmarks depend on the subject and are outside this subject-agnostic document.
+Regardless of subject, major masses and proportional relationships are established before surface detail. Construction methods (gesture line, envelope, major-mass blocking, cross-contour) appear across figure, object, vehicle, and environment instruction. The requirement to establish structure early is universal; the specific landmarks depend on the subject. Subject-specific landmark guidance for a given motif is available through the two-tier knowledge system described in §1.5.
 
 ### 3.5 Perspective systems
 Linear perspective (one-, two-, three-point), atmospheric/aerial perspective, and foreshortening are the primary systems for depth. Resolve them during construction so later rendering does not fight incorrect spatial relationships.
@@ -516,6 +538,6 @@ Every technical and numerical claim in this document was checked against the fol
 91. https://www.youtube.com/watch?v=9A8_9UW12bY
 92. https://artwod.com/blog/how-to-make-digital-art-look-more-professional-with-better-lighting
 
-This reference is written for you — an art hobbyist who wants advice that follows established art theory and real technical standards from the first idea to a finished, correctly exported file. An AI can use the document to answer your questions. You are the only one who draws, paints, adjusts, and exports the image. The document stays subject-agnostic and free of invented numbers so the advice you receive remains trustworthy.
+This reference is written for you — an art hobbyist who wants advice that follows established art theory and real technical standards from the first idea to a finished, correctly exported file. An AI can use the document to answer your questions. You are the only one who draws, paints, adjusts, and exports the image. The document stays free of invented numbers and grounded in cited sources so the advice you receive remains trustworthy.
 
 *End of document. Version 5.0 — Full depth restored, correct framing, complete source URLs.*
