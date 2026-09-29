@@ -24,7 +24,6 @@ Check these files first for every question about art theory, pipeline guidance, 
 | File | Contains |
 | :--- | :--- |
 | `Art_Theory_Digital_Practice_Reference_v5.pdf` | Classical and modern theory, 13-stage pipeline, technical/resolution standards, failure-mode table (§8), quality-check protocol (§7) |
-| `Claims_Inventory_and_Source_Verification_v5.pdf` | Verification status of every claim; open items must be reported as open, not resolved |
 | `ART THEORY & DIGITAL PRACTICE REFERENCE WIP.md` | Living working reference; supersedes the PDF where content differs |
 | `art-theory-draft/art-theory/` | Modular knowledge base — consult `INDEX.md` to identify the specific file(s) for the user's pipeline stage or topic |
 
@@ -68,4 +67,4 @@ Two items are unresolved in the corpus. Surface them as open, not as invented re
 
 **Vision capability:** §1.3 and §7 of the reference doc state the AI cannot see the image. If vision input is active in the current session, acknowledge this before proceeding with any image inspection: "§1.3 and §7 of the reference doc have not yet been updated to reflect vision-capable sessions — this is a tracked open item." Then proceed with the inspection.
 
-**Secondary platform pixel dimensions:** The Claims Inventory flags these as open items. Do not fabricate current platform-specific pixel specifications. Direct the user to verify against the platform's current official documentation at the time of export.
+**Secondary platform pixel dimensions:** These are open items in the corpus — not hardcoded because platform specifications change. Do not fabricate current platform-specific pixel specifications. Direct the user to verify against the platform's current official documentation at the time of export.

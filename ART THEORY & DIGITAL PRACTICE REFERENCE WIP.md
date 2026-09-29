@@ -13,7 +13,7 @@
 | **How this document is used** | You (the human artist) create every image. An AI may read this document to give you advice. Neither the document nor the AI ever creates, edits, or modifies any image. |
 | **Version** | 5.0 — Continuing to improve theoretical and structural depth; Always ensuring all complete source URLs in bibliography exist. |
 | **Evidence rule** | Every numerical standard and technical claim is drawn from published sources. No invented ranges. Full direct URLs appear in the Bibliography. |
-| **Knowledge tiers** | Tier 1: this document, *Art Theory & Digital Practice Reference v5.0*, and *Claims Inventory & Multi-Source Verification*. Tier 2: web retrieval for subject-specific knowledge absent from Tier 1, available on user approval, flagged as unverified until promoted through the three-source standard. See §1.5. |
+| **Knowledge tiers** | Tier 1: this document and *Art Theory & Digital Practice Reference v5.0*. Tier 2: web retrieval for subject-specific knowledge absent from Tier 1, available on user approval, flagged as unverified until promoted through the three-source standard. See §1.5. |
 
 This document supplies the theory and the practical checkpoints so that when you ask an AI for help at any stage of making a digital artwork, the advice you receive is complete, grounded in established art theory and real technical standards, and free of made-up numbers. You remain the only person who draws, paints, adjusts, and exports the image.
 
@@ -45,7 +45,7 @@ Content follows two axes: (1) theoretical foundations from classical to modern, 
 
 ### 1.5 Knowledge tiers and subject-specific guidance
 
-**Tier 1 — verified corpus.** Every response draws first from the three verified source documents: *Art Theory & Digital Practice Reference v5.0*, *Claims Inventory & Multi-Source Verification*, and this working reference. All technical and numerical claims trace to cited published sources within this corpus. Tier 1 is subject-matter agnostic in its universal principles but is not limited to universal content — subject-specific entries are added to it through the promotion process below.
+**Tier 1 — verified corpus.** Every response draws first from the two verified source documents: *Art Theory & Digital Practice Reference v5.0* and this working reference. All technical and numerical claims trace to cited published sources within this corpus. Tier 1 is subject-matter agnostic in its universal principles but is not limited to universal content — subject-specific entries are added to it through the promotion process below.
 
 **Tier 2 — web retrieval.** The universal principles in this document (value, composition, gesture, edge control, perspective, color, the 13-stage pipeline) apply to any subject matter. When a user asks about knowledge specific to a particular subject type — anatomy, construction landmarks, markings, or surface systems for a given motif — and that knowledge is absent from Tier 1, the AI may search the web upon explicit user approval. Information retrieved this way:
 
@@ -332,7 +332,7 @@ The most widely stated standard for continuous-tone color work intended for clos
 | YouTube thumbnail | 1280×720 |
 | 4K wallpaper | 3840×2160 |
 
-*Platform requirements change over time. Verify every pixel dimension and aspect ratio against the current official specification pages at the moment of delivery. Full source URLs appear in the Bibliography and Claims Inventory.*
+*Platform requirements change over time. Verify every pixel dimension and aspect ratio against the current official specification pages at the moment of delivery. Full source URLs appear in the Bibliography.*
 
 Practical starting point drawn from the sources: if print is uncertain, beginning near A4 at 300 PPI (~2480×3508) or ~3000 px on the long side gives headroom for both good screen display and potential print without upscaling.
 
