@@ -6,6 +6,9 @@ This file is the quarantine area for subject-specific knowledge retrieved from w
 
 ## Rules governing this file
 
+**A PENDING entry blocks new retrieval for its motif:**
+Before triggering any Tier 2 web search, check this file for a PENDING entry covering the same motif. If one exists, do not search. Present the existing entry to the user with exactly two choices: defer (reset the 3-day clock) or resolve (approve or reject the entry now). A new search for that motif is only permitted after the existing entry is closed (PROMOTED or REJECTED).
+
 **Session start check (mandatory, every session):**
 Read this file at the start of every session. Find every entry where `created` is more than 3 days before today's date. Present each overdue entry to the user and collect a decision **before any other work begins**:
 

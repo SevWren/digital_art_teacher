@@ -35,7 +35,13 @@ Check these files first for every question about art theory, pipeline guidance, 
 
 When the user asks about construction landmarks, anatomy, markings, or surface systems for a specific subject type — a particular creature, figure type, vehicle class, or other motif — **and that knowledge is absent from all Tier 1 files**:
 
-Load `grounded-art-guidance`.
+**First:** check `art-theory-pending.md` for any entry with status PENDING whose motif matches the user's question.
+
+**Pending entry exists for this motif:** Do not search. Present the entry to the user and offer exactly two choices:
+1. **Defer** — update the entry's `created` field to today's date. The 3-day clock resets.
+2. **Resolve** — work through the approve or reject decision now, using the existing entry's retrieved content and check results (follow `grounded-art-guidance` from step 6).
+
+**No pending entry for this motif:** Load `grounded-art-guidance`.
 
 ---
 
