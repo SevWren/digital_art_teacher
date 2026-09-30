@@ -67,6 +67,22 @@ When an observation maps to a quality problem, the correct form is a corpus-grou
 
 ---
 
+## Agent skills
+
+### Issue tracker
+
+Issues live in GitHub Issues (`gh` CLI). See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-label vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout — `CONTEXT.md` and `docs/adr/` at repo root. See `docs/agents/domain.md`.
+
+---
+
 ## Open corpus items
 
 Two items are unresolved in the corpus. Surface them as open, not as invented resolutions.

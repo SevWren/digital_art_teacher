@@ -2,7 +2,7 @@ sevwrenai.private-key.pem
 sevwrenai.2026-08-22.private-key.pem
 *.pem
 gh_app_token.py
-*handoff*
+*HANDOFF*
 art-theory.zip
 .claude/
 .codex/
