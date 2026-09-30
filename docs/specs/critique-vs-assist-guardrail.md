@@ -290,6 +290,20 @@ Posts "STRESS-TEST PASS — #5 may proceed" and closes issue #4.
 
 ---
 
+### Consensus requirement (owner decision 2026-09-30)
+
+**A stress test result is only valid if confirmed by 4 or more independent agents.**
+
+The stress-test agent (issue #4) must not evaluate the spec alone. It must spawn at least 3 sub-agents or peer agents, each independently evaluating the same spec and the same 10-prompt corpus against the same decision tree. The lead agent then compares all results.
+
+**Pass condition:** All 4+ agents independently return the same verdict (pass or no-go) for every element being evaluated. Any single dissenting agent on any CRITICAL element triggers no-go for the whole test — the result does not pass until consensus is unanimous on all CRITICAL elements.
+
+**On non-unanimous result:** The lead stress-test agent posts a "CONSENSUS FAILURE" comment on issue #4 listing which element(s) produced disagreement, which agents disagreed, and what each returned. This is treated as a CRITICAL finding. Issue #5 remains blocked.
+
+**Why this rule exists:** A single agent can miss boundary cases, misread the decision tree, or produce a confident-but-wrong result. Four independent agents reaching the same conclusion provides meaningful verification. The spec is complex enough (3 layers, mode decision tree, runtime-dependent prompt 10) that single-agent validation is insufficient.
+
+---
+
 ## 9. Implementation Notes
 
 **Skill file location:** `CLAUDE/skills/art-guidance/critique-vs-assist-guardrail/SKILL.md`
@@ -334,4 +348,4 @@ The following items are not yet resolved or implemented as of this spec being wr
 
 5. **PTM (issue #28) not confirmed complete.** The User-Facing Language requirement (Section 6 deflection format) references the UCL register. The PTM is the canonical reference for UCL translations. If #28 is not complete when the skill is implemented, the skill's deflection phrasings must still meet the plain-hobbyist-English standard described in Section 6.
 
-6. **Ambiguity on prompt 10 mode-(c) boundary.** Whether "You said the shadows are flat — do you think that's a problem?" resolves to mode (a) or mode (c) depends on runtime conditions (was there a prior corpus-grounded observation in this exchange?). The decision tree handles this, but the stress-test agent should explicitly flag this prompt's result and confirm the rule is clear.
+6. **Prompt 10 mode-(c) rule — confirmed decision (2026-09-30).** The context-dependent rule is the correct behavior: the AI is allowed to give a grounded follow-up answer when it is clearly referencing something it already said in the current exchange. The decision tree in Section 7 correctly handles this — all three mode-(c) conditions must be checked at runtime. This is not an ambiguity; it is an intentional design. The stress-test agent (issue #4) must run prompt 10 in both contexts: (a) where a prior corpus-grounded observation was made, and (b) where no such observation was made. Both test cases must return the correct mode for the consensus to be valid.
