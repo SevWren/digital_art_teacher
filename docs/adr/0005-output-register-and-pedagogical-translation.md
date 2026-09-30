@@ -64,3 +64,41 @@ Rejected. Without a stable reference, translations will be inconsistent across a
 
 **Alternative C: Add plain-English sections to corpus files only, no CLAUDE.md output rule.**
 Partially adopted (plain-English sections are added to knowledge files). But insufficient on its own: the output-register rule and UCL translation table in CLAUDE.md are necessary to govern workflow prompts, citation format, and failure-mode diagnosis language, which don't live in knowledge files.
+
+---
+
+## Amendment — PTM Example Quality Standard
+
+**Date:** 2026-09-30
+
+Initial PTM examples were reviewed and found to still fail for hobbyists. Identified failure pattern: examples were written one step plainer than the corpus but still inside the art world. Three specific failure modes:
+
+1. **Art vocabulary used to explain art vocabulary** — e.g., "your highlights and lit ground" to explain "light group." A user who doesn't know what a light group is also doesn't know what a highlight is.
+2. **Physically inaccurate analogies** — e.g., "think of a cheek as flat panels." A cheek is visibly curved; the analogy breaks on inspection and teaches incorrect intuition.
+3. **Abstract nouns substituted for other abstract nouns** — e.g., replacing "Gestalt" with "unit." "Unit" is equally opaque without a physical anchor.
+
+### Three mandatory example quality tests (now part of the PTM spec)
+
+Every PTM example must pass all three before acceptance:
+
+**Test 1 — Zero art vocabulary.** No art-specific terms in the example. The example must stand alone without them.
+
+**Test 2 — Physically accurate analogy.** The analogy must be factually consistent with the concept. A wrong physical analogy teaches wrong intuition.
+
+**Test 3 — No abstract nouns without a physical anchor.** Words like "unit", "element", "form", "structure", "region", "space" must each be replaced with or immediately followed by something physical and touchable.
+
+### Required example pattern
+
+**Everyday anchor first → then connect to the painting.**
+
+Start with a physical, everyday object or observable phenomenon requiring zero art knowledge (a cardboard box, a black-and-white photo, a flock of birds, sunlight through a window). Describe what happens. Then connect to the painting in one sentence.
+
+### Reference corrected examples
+
+| Concept | Corrected example |
+|---|---|
+| Light group / shadow group | "In a black-and-white photo, everything is either bright or dark. A good painting keeps all the bright things in one 'team' and all the dark things in another team. The moment those teams mix everywhere into the same muddy grey, the image looks flat and hard to read." |
+| Flat-face thinking (planar analysis) | "Think of a cardboard box sitting in sunlight. The top face is bright. The front face is medium. The side is dark. Even though a nose or an arm is curved, your brain reads it the same way — bright side, medium side, dark side. When painting anything rounded, start by asking: which 'face of the box' is this part?" |
+| How eyes smoosh things (gestalt) | "A flock of birds looks like one moving smudge, not 500 separate birds — your eyes automatically lump nearby things into one blob before you see the details. In a painting, three characters standing close together will read as 'a group of people' before the viewer looks closely enough to count them." |
+
+These examples are the authoritative quality bar for all PTM authoring. Issue #28 brief amended accordingly.
