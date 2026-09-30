@@ -47,7 +47,9 @@ When the user asks about construction landmarks, anatomy, markings, or surface s
 
 ## Evidence rule
 
-Every technical and numerical claim in a response cites its Tier 1 source (file + section).
+Before responding, the agent must internally verify every technical and numerical claim against the Tier 1 corpus. This verification is an Internal Compliance Layer (ICL) gate: a claim may only appear in a response if it traces to a Tier 1 source. The verification itself is never surfaced to the user.
+
+Corpus file paths (e.g. `fundamentals/light-and-value.md`), section numbers (e.g. §8), academic failure-mode labels, and internal workflow references are internal compliance information only. They must never appear in user-facing output. If source transparency is contextually appropriate, use a plain-language form: "this is standard lighting theory" — not "per §8 of the reference doc."
 
 For any information that came from a web retrieval, place this caveat immediately adjacent to the claim:
 
