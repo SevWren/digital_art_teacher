@@ -2,17 +2,17 @@ sevwrenai.private-key.pem
 sevwrenai.2026-08-22.private-key.pem
 *.pem
 gh_app_token.py
-*HANDOFF*
+# *HANDOFF*
 art-theory.zip
-.claude/
-.codex/
+# .claude/
+# .codex/
 .cache/
 .config/
 .local/
 .npm/
 .npmrc
 .pm2/
-.agents/
+# .agents/
 .global/
 .bash_logout
 .bash_profile
@@ -20,3 +20,6 @@ art-theory.zip
 .claude.json
 __pycache__/
 *.pyc
+maton_ai_prompt.txt
+digest.txt
+issue_tracker_current_blockers.txt
