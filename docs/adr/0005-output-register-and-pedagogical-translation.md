@@ -102,3 +102,38 @@ Start with a physical, everyday object or observable phenomenon requiring zero a
 | How eyes smoosh things (gestalt) | "A flock of birds looks like one moving smudge, not 500 separate birds — your eyes automatically lump nearby things into one blob before you see the details. In a painting, three characters standing close together will read as 'a group of people' before the viewer looks closely enough to count them." |
 
 These examples are the authoritative quality bar for all PTM authoring. Issue #28 brief amended accordingly.
+
+---
+
+## Amendment — Coaching Response Format (issue #30)
+
+**Date:** 2026-09-30
+
+Two validated example outputs were reviewed in full (spaceship drawing, depth advice scenario and reference-image match scenario). Both follow an identical structure that is not yet specified anywhere in the project. Issue #30 captures this as a formal Response Format Specification (`docs/specs/response-format.md`).
+
+### The pattern
+
+```
+Goal statement (one sentence, plain English, no theory terms)
+
+Technique blocks (2–5):
+  - Heading: plain-English name (never academic term)
+  - Current state: what is in THIS image right now (specific, descriptive, not evaluative)
+  - Steps: numbered, software-level, tool-named
+  - Why it works: one plain-English sentence describing the observable change
+
+Quick exercise: tool + setting + action + observable result. Low-risk, fast, reversible.
+```
+
+For reference-image comparisons: "In your reference, X. Right now, your image has Y." + gap-closing steps. If the user's image offers better opportunities than the reference, the agent notes and builds on them.
+
+### The corpus-as-engine principle
+
+This is the key architectural consequence: the corpus (theory, §8 failure modes, fundamentals) is the reasoning behind every technique block. It never surfaces on the response side. The evidence rule (every claim traces to a Tier 1 source) is enforced at the ICL layer. The user sees technique steps, not citations or section numbers.
+
+### Downstream effects
+
+- #27 (output register): must reference the response format spec and state the corpus-as-engine principle explicitly
+- #3 (guardrail spec): deflections redirect into a technique block, not a flat refusal
+- #28 (PTM): scope expanded to include software tool vocabulary used in steps
+- #7–21 (knowledge files): Plain-English Guide sections are the raw material for technique blocks; write them with the response format in mind
