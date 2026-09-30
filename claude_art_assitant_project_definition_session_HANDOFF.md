@@ -1,3 +1,20 @@
+> **HISTORICAL ARTIFACT — Project-definition phase record. This document predates all build work.**
+>
+> Written before any instruction files, skills, knowledge base, or ADRs were created. The project has progressed substantially beyond this point. **Do not treat any statement in this document as reflecting current project state.**
+>
+> **Current authoritative state:**
+> - `CLAUDE.md` — operational rules and corpus
+> - `CONTEXT.md` — canonical glossary (including terminology changes: "pipeline step" not "stage")
+> - `docs/adr/` — five accepted architecture decisions (ADRs 0001–0005)
+> - `docs/agents/orchestration-plan-2026-09-30.md` — the active work plan for all remaining phases
+> - GitHub Issues https://github.com/SevWren/digital_art_teacher/issues — 37 open items tracking current work
+>
+> **Known conflicts between this document and current project state:**
+> - The "stage-addressable modules (one skill per pipeline stage)" architecture in §6 was not built. The actual architecture is: one `grounded-art-guidance` skill + Tier 1/Tier 2 tiered corpus + pending-and-promote workflow (ADR-0004).
+> - The Claims Inventory PDF referenced in §1 is excluded from the repo by design (ADR-0002). It is not an active corpus source.
+> - The Claude Project memory paths in §8 (/projects/UUID/...) are inaccessible in agentic contexts (Claude Code, Codex, Gemini CLI). Use CLAUDE.md, CONTEXT.md, and docs/adr/ instead.
+> - "stage" in §1 and §6 (pipeline sense) is deprecated terminology. Canonical term is "pipeline step" (CONTEXT.md).
+
 # Project Handoff — Digital Art Teacher (Agentic Art-Theory Assistant)
 
 **Repo:** https://github.com/SevWren/digital_art_teacher
@@ -45,7 +62,7 @@ A **critique-vs-assist guardrail** is queued as explicit, high-priority follow-u
 
 Reasoning on record: without vision, the AI can only ever respond to what the user already typed — an accidental circuit-breaker against the AI originating unrequested opinions. Vision removes that circuit-breaker; "describe what's there" and "judge whether it's good" become one step apart with nothing structurally preventing the drift, unless the boundary is locked down as a hard rule first.
 
-**This is the next open question for the project.** As of this handoff, no sequencing plan, guardrail spec, hook design, or enforcement mechanism has been written or committed anywhere — do not assume otherwise.
+**This is the next open question for the project.** As of the writing of this document, no sequencing plan, guardrail spec, hook design, or enforcement mechanism had been written or committed anywhere. *(Note: This statement was accurate at the time of writing. It is no longer accurate. See `docs/agents/orchestration-plan-2026-09-30.md` and GitHub issues #2–#6 for current state.)*
 
 ## 6. Current project achieve-statement (final text as of this handoff)
 
@@ -82,6 +99,8 @@ For sessions with access to this Claude Project's memory:
 - `/projects/01a0ee9d-0855-7440-b020-70c0b080db9b/areas/reference-documents.md` — records that both source documents are incomplete and still need improvement.
 - `/projects/01a0ee9d-0855-7440-b020-70c0b080db9b/index.md` — records the project name and repo location.
 
+**IMPORTANT FOR AGENTIC SESSIONS (Claude Code, Codex, Gemini CLI):** The `/projects/` paths above are Claude Projects UI memory paths — they are NOT filesystem paths and cannot be read by agents operating from the repository. They are preserved here for reference only. The equivalent persistent context for agentic sessions is: `CLAUDE.md` (operational rules), `CONTEXT.md` (canonical glossary), and `docs/adr/` (architecture decisions).
+
 ## 9. Suggested skills for the next session
 
 - **writing-for-agents** — once the guardrail spec exists, use when actually drafting CLAUDE.md / AGENTS.md / GEMINI.md content.
@@ -97,3 +116,6 @@ For sessions with access to this Claude Project's memory:
 - No repo file structure or actual CLAUDE.md / AGENTS.md / GEMINI.md content.
 
 All of the above are queued, not started, as of this handoff point.
+
+---
+*Historical note: All four items listed above have since been built. See `CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `docs/adr/`, and `docs/agents/orchestration-plan-2026-09-30.md` for current state.*
