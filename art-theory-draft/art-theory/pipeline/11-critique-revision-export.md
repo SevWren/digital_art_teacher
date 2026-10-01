@@ -16,7 +16,7 @@ Stage 11 is the closing gate of the pipeline. You return to the goal you wrote a
 4. **Edge hierarchy.** Are the sharpest, hardest edges at the focal point, and do edges soften toward the edges and background? Does the eye land where it should?
 5. **Technical requirements.** Does the file meet the output goal stated in the brief — correct colour space, correct resolution or pixel dimensions, correct format?
 
-**Review against the brief.** Go back to the goal you wrote in Stage 1. Read it as if seeing the image for the first time. Does the image achieve what the brief asked for? This is the user's call to make, not the agent's. The agent can describe what is present; only the user can decide whether it is done.
+**Review against the brief.** Go back to the goal you wrote in Stage 01. Read it as if seeing the image for the first time. Does the image achieve what the brief asked for? This is the user's call to make, not the agent's. The agent can describe what is present; only the user can decide whether it is done.
 
 **Make targeted revisions.** If the definition-of-done check flags a problem, fix that specific thing and check again. Do not open the image to general improvement at this point — the pipeline is designed so that large problems are solved early. Revision here means fixing what the checklist found, not restarting.
 
@@ -52,8 +52,8 @@ The image satisfies all five points of the definition-of-done check above. A mas
 
 ## Connections to Other Stages
 
-- **Stage 1 (Brief & Ideation):** The brief written at Stage 1 is the primary reference for the critique check. If no brief was written, the definition-of-done check has no target — this is the most common reason Stage 11 stalls.
-- **Stages 6–10 (Value through Polish):** The five-point check maps directly onto decisions made in these stages. If the desaturated value check fails, the problem originates at Stage 6 or 7. If the edge hierarchy check fails, the problem originates at Stage 9 or 10. Targeted revision means returning to the governing stage, not reworking the whole image.
+- **Stage 01 (Brief & Ideation):** The brief written at Stage 01 is the primary reference for the critique check. If no brief was written, the definition-of-done check has no target — this is the most common reason Stage 11 stalls.
+- **Stages 06–10 (Value through Polish):** The five-point check maps directly onto decisions made in these stages. If the desaturated value check fails, the problem originates at Stage 06 or 07. If the edge hierarchy check fails, the problem originates at Stage 09 or 10. Targeted revision means returning to the governing stage, not reworking the whole image.
 - **Stage 11 is final.** There is no next stage. The output of this stage is a safely archived project folder containing a verified master and a correctly formatted delivery file.
 
 ---

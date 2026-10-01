@@ -1,0 +1,230 @@
+# Digital Art Teacher — Session 4 Handoff
+
+**Date:** 2026-10-01
+**Repo:** https://github.com/SevWren/digital_art_teacher
+**Branch:** `main` (backup branch: `backup/session-3-start-2026-09-30` — prior session's restore point)
+**Handoff from:** Session 4 (this session)
+**Prior handoff in repo:** `docs/historical/digital_art_teacher_handoff_2026-09-30.md`
+
+---
+
+## Session Summary
+
+This session completed Epic A (Output Language Foundation), Epic B (Critique-vs-Assist Guardrail), and Epic C (Knowledge Base — Corpus Content) in full. It also completed supporting issues #37 (UCL Language Audit) and #38 (INDEX update). Issue #36 (pipeline review) was run and is awaiting final commit.
+
+### Issues Closed This Session
+
+| Issue | Title | Artifact |
+|---|---|---|
+| #2 | Add critique/description boundary terms to CONTEXT.md | `CONTEXT.md` |
+| #3 | Critique-vs-assist guardrail spec (verified complete) | `docs/specs/critique-vs-assist-guardrail.md` |
+| #4 | Stress-test guardrail spec — 4-agent consensus | Spec amended; commit 64b2dc5 |
+| #5 | Implement critique-vs-assist-guardrail skill | `CLAUDE/skills/art-guidance/critique-vs-assist-guardrail/SKILL.md` |
+| #6 | Update CLAUDE.md with guardrail block | `CLAUDE.md` |
+| #7–#17 | Write all 11 pipeline files | `art-theory-draft/art-theory/pipeline/01–11.md` |
+| #18 | Write fundamentals/materials-and-texture.md | written |
+| #19 | Write fundamentals/design-and-shape-language.md | written |
+| #20 | Write digital-practices/tools-layers-resolution.md | written |
+| #21 | Write digital-practices/critique-methods.md | written |
+| #29 | Retrofit plain-English guide sections to 8 knowledge base files | All 8 existing files updated |
+| #37 | UCL Language Audit of skill files | grounded-art-guidance fixed; all others clean |
+| #38 | Update INDEX.md population status | `art-theory-draft/art-theory/INDEX.md` |
+
+### Epics Closed This Session
+
+| Epic | Status |
+|---|---|
+| #31 — Epic A (Output Language Foundation) | CLOSED |
+| #32 — Epic B (Critique-vs-Assist Guardrail) | CLOSED |
+| #33 — Epic C (Knowledge Base — Corpus Content) | CLOSED |
+
+---
+
+## Detailed Work
+
+### Epic B — Critique-vs-Assist Guardrail (issues #2–#6)
+
+**CONTEXT.md (#2):** Added Critique, Observation, Diagnosis, and Deflection as canonical vocabulary terms under `## Authorship and boundaries`. These are referenced by the guardrail spec.
+
+**Guardrail spec (#3):** Verified `docs/specs/critique-vs-assist-guardrail.md` is complete and accepted. No changes needed.
+
+**Stress test (#4):** Ran 4 parallel agents evaluating the spec against 10 adversarial prompts. Result: CONSENSUS FAILURE/NO-GO — Agents A and C found a CRITICAL gap: Section 4 Layer 2a had no exception clause for the mode-(c) override path. The spec was amended (commit 64b2dc5):
+- Added exception clause to Layer 2a: mode-(c) conditions can override a keyword trigger
+- Added decision tree trace for prompt 9 (resolved the "(b)/(c)" ambiguity)
+
+**Skill (#5):** Implemented `CLAUDE/skills/art-guidance/critique-vs-assist-guardrail/SKILL.md` with all three layers, all three modes, retry cap, input channel notes, and UCL register requirement.
+
+**CLAUDE.md (#6):** Added `## Critique-vs-assist guardrail` section establishing Layer 1 (standing load before every response). Added cross-reference from `## Authorship and description boundary`.
+
+### Epic C — Knowledge Base (issues #7–#21)
+
+All 15 new knowledge files written. Each includes a `## Plain-English Guide` section (ADR-0005 requirement) with:
+- "Who this is for" callout
+- Plain-English introduction
+- Key ideas without jargon (everyday anchor → painting connection)
+- Software steps
+- Common traps to avoid
+
+**Pipeline files written:**
+- `01-brief-and-ideation.md` — project brief, ideation, canvas setup decisions
+- `02-reference-gathering.md` — reference collection, analytical deconstruction
+- `03-thumbnailing-composition.md` — thumbnail process, value pattern, picking the strongest
+- `04-gesture-silhouette.md` — action line, silhouette check, counter-curves
+- `05-perspective-construction.md` — blocking as boxes/cylinders, 1/2/3-point perspective
+- `06-value-lighting.md` — greyscale study, light/shadow teams, hierarchical contrast
+- `07-colour-palette.md` — palette lock, local colour, temperature relationships
+- `08-form-materials.md` — form modeling, diffuse vs specular, surface texture
+- `09-rendering-detail.md` — detail hierarchy, edge control, avoiding wallpaper texture
+- `10-atmosphere-polish.md` — aerial perspective, final checks (flip, thumbnail, desaturate)
+- `11-critique-revision-export.md` — definition of done, file saving, export, archiving
+
+**Fundamentals files written:**
+- `fundamentals/materials-and-texture.md`
+- `fundamentals/design-and-shape-language.md`
+
+**Digital practices files written:**
+- `digital-practices/tools-layers-resolution.md`
+- `digital-practices/critique-methods.md` (respects authorship boundary — enables user self-check, not agent verdict)
+
+### Issue #29 — Plain-English Guide retrofit
+
+8 existing knowledge files had `## Plain-English Guide` sections added:
+- All 6 existing fundamentals files
+- `digital-practices/workflow-strategies.md`
+- `pipeline/00-overview.md`
+
+All sections meet the ADR-0005 quality standard: everyday anchor first, zero art vocabulary in examples, physically accurate analogies.
+
+### Issue #37 — UCL Language Audit
+
+`grounded-art-guidance/SKILL.md` had 5 ICL leakages fixed:
+1. "corpus" → "my knowledge base" in Step 2 user prompt
+2. Six-check raw table no longer shown to user — replaced with plain-English outcome summary
+3. "approve/reject/defer" replaced with UCL-register alternatives
+4. Conflict warning no longer references "Tier 1 file"
+5. Corpus file paths removed from the No-branch user-facing guidance
+
+All other skills (engineering, productivity) contain no art-domain ICL terms.
+
+---
+
+## Current State of Open Issues
+
+### IMMEDIATE NEXT PRIORITIES
+
+#### #36 — [P0] Comprehensive pipeline review (running)
+
+A pipeline review agent was launched at end of session. It was still in progress when this handoff was written. **Next agent: check whether a commit was made and issue #36 was closed. If not, run the review.**
+
+Command to check:
+```sh
+git log --oneline -5  # check if a review commit exists
+```
+
+If not closed: run the review per the handoff note. All 12 pipeline files (00–11) are at `art-theory-draft/art-theory/pipeline/`. Reference source: `ART THEORY & DIGITAL PRACTICE REFERENCE WIP.md` sections 5.0–5.12.
+
+---
+
+#### #22 — [Phase 4] Update §1.3 and §7 of reference doc for vision capability
+
+**Epic:** D — Corpus & Instruction Updates
+**What:** The WIP markdown (`ART THEORY & DIGITAL PRACTICE REFERENCE WIP.md`) needs annotations at §1.3 and §7 noting that vision input is now available (the PDF is read-only). Also update `CLAUDE.md ## Open corpus items` to note the annotation was added.
+
+---
+
+#### #23 — [Phase 5] Implement response-gate hooks
+
+**Epic:** Cross-epic (unblocked now that #5, #6 are done)
+**What:** Automated hooks that gate agent responses through the evidence rule and output register checks before delivery. Depends on guardrail work (#5, #6) being done — they now are. Likely a CLAUDE.md hook or a new skill.
+
+---
+
+#### #24 — [Phase 5] Resolve CONTEXT.md edge case: two simultaneous input channels
+
+**Epic:** E
+**What:** The domain model in `CONTEXT.md` has an unresolved edge case when vision input and self-report are both active simultaneously. Document the resolution in CONTEXT.md.
+
+---
+
+#### #25 — [Phase 6] Run integration QA across full instruction set
+
+**Epic:** E
+**What:** Full integration QA — test scenarios end-to-end through CLAUDE.md + skills + corpus. Verify output register, guardrail, and evidence rule all hold. Document results. This is a multi-agent task (parallel test agents).
+
+---
+
+#### #26 — [Phase 7] Write next session handoff doc
+
+Close this issue when the next agent writes its handoff.
+
+---
+
+## Recommended Next Session Order
+
+1. **Check if #36 was closed** — if not, run the pipeline review
+2. **#22** — annotate WIP reference doc for vision capability
+3. **#23** — implement response-gate hooks
+4. **#24** — resolve two-input-channel edge case in CONTEXT.md
+5. **#25** — integration QA (multi-agent)
+6. **Epic D (#34)** — close if #22, #36, #37, #38 all closed
+7. **#26** — write next session's handoff
+
+---
+
+## Key Files Reference
+
+| Path | Purpose |
+|---|---|
+| `CLAUDE.md` | Agent operating instructions — now includes `## Critique-vs-assist guardrail` section |
+| `CONTEXT.md` | Domain model — now includes Critique, Observation, Diagnosis, Deflection terms |
+| `docs/adr/0005-output-register-and-pedagogical-translation.md` | Output register architecture |
+| `docs/specs/critique-vs-assist-guardrail.md` | Guardrail spec (amended post-stress-test) |
+| `docs/specs/response-format.md` | Coaching response structure |
+| `docs/pedagogy/translation-matrix.md` | PTM — canonical plain-English translation table |
+| `CLAUDE/skills/art-guidance/critique-vs-assist-guardrail/SKILL.md` | Guardrail enforcement skill |
+| `CLAUDE/skills/art-guidance/grounded-art-guidance/SKILL.md` | Subject-specific gap retrieval skill (UCL-audited) |
+| `art-theory-draft/art-theory/INDEX.md` | Knowledge base index — fully populated |
+| `art-theory-draft/art-theory/pipeline/` | All 12 pipeline files (00–11) |
+| `art-theory-draft/art-theory/fundamentals/` | All 8 fundamentals files |
+| `art-theory-draft/art-theory/digital-practices/` | All 3 digital-practices files |
+
+---
+
+## GitHub Token Setup
+
+```sh
+# Fix the key path mismatch and get a token
+python3 -c "
+with open('/home/vercel-sandbox/gh_app_token.py') as f:
+    content = f.read()
+content = content.replace('sevwrenai.2026-08-22.private-key.pem', 'sevwrenai.private-key.pem')
+with open('/tmp/gh_token_fixed.py', 'w') as f:
+    f.write(content)
+"
+pip install PyJWT cryptography -q
+TOKEN=$(python3 /tmp/gh_token_fixed.py)
+
+# Configure git remote and identity
+git remote set-url origin "https://x-access-token:${TOKEN}@github.com/SevWren/digital_art_teacher.git"
+git config user.name "sevwrenai[bot]"
+git config user.email "319983417+sevwrenai[bot]@users.noreply.github.com"
+
+# Use TOKEN with curl:
+curl -s -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github+json" \
+  "https://api.github.com/repos/SevWren/digital_art_teacher/issues?state=open"
+```
+
+Token expires after ~9 minutes. Refresh by re-running `python3 /tmp/gh_token_fixed.py`.
+
+---
+
+## Notes for Next Agent
+
+- **Push immediately** after every file change — the sandbox is ephemeral.
+- **Export non-repo files to Google Drive** if needed via the `api-gateway` skill.
+- **Do not use the default Maton GitHub connector** — use the `gh_app_token.py` method above.
+- **Output register is strict.** All corpus paths, section numbers, ICL terms, and workflow labels are internal only. See `CLAUDE.md ## Output register` and ADR-0005.
+- **PTM is the translation authority.** For any user-facing plain-English equivalent of an art term, `docs/pedagogy/translation-matrix.md` is canonical.
+- **Guardrail is now active.** `CLAUDE.md` loads the guardrail skill before every response (Layer 1 standing instruction).
+- **The knowledge base is fully populated** (all pipeline stages 00–11, all 8 fundamentals, all 3 digital-practices files). Index at `art-theory-draft/art-theory/INDEX.md`.
+- **Epic D (#34) is close to closing**: #22, #36 are the remaining blockers. #37, #38 already closed.
