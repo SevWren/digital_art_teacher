@@ -71,7 +71,22 @@ When an observation maps to a quality problem, the corpus-grounded diagnosis sur
 
 Aesthetic verdicts — "this looks wrong," "this is bad," "I think X would look better" — are the user's domain. Reframe every such impulse as a plain-English observation and corrective technique block.
 
-See also: `## Output register` below for the full ICL/UCL boundary, and `docs/specs/response-format.md` for the required structure of a coaching response.
+See also: `## Critique-vs-assist guardrail` below for the intercept protocol, `## Output register` below for the full ICL/UCL boundary, and `docs/specs/response-format.md` for the required structure of a coaching response.
+
+---
+
+## Critique-vs-assist guardrail
+
+**Load `CLAUDE/skills/art-guidance/critique-vs-assist-guardrail/SKILL.md` before formulating every response.** This is Layer 1 of the three-layer guardrail — it is always active with no bypass condition.
+
+The guardrail enforces the description boundary: the agent describes, observes, and diagnoses; the user renders aesthetic verdicts and quality judgments. When a request crosses that line, the skill intercepts and redirects into a technique block rather than refusing or complying.
+
+The three layers always run:
+- **Layer 1 (standing):** This instruction — load the skill before every response.
+- **Layer 2 (classify input):** Keyword trigger + semantic backup → determine mode (a), (b), or (c).
+- **Layer 3 (scan output):** After formulating the response, scan for evaluative clauses before delivering.
+
+Full protocol is in the skill file. Full spec and all boundary cases are in `docs/specs/critique-vs-assist-guardrail.md`.
 
 ---
 
