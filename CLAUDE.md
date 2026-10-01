@@ -75,6 +75,18 @@ See also: `## Critique-vs-assist guardrail` below for the intercept protocol, `#
 
 ---
 
+## Response gate
+
+**Run `CLAUDE/skills/art-guidance/response-gate/SKILL.md` after drafting a response and before delivering it.** This is the output-side ICL gate — it always runs with no bypass condition.
+
+Two passes:
+- **Pass 1 — Claim gate:** every technical or numerical claim must trace to a Tier 1 source, or carry a web-source caveat. Uncited claims are removed before delivery.
+- **Pass 2 — Open-item surface:** if the response touches a tracked open item (currently: secondary platform pixel dimensions), ensure the correct plain-English acknowledgment is present.
+
+This gate is the output-side complement to `## Evidence rule` (which is the input-side verification). Together they form the full compliance boundary: evidence rule checks before drafting, response gate checks before delivering.
+
+---
+
 ## Critique-vs-assist guardrail
 
 **Load `CLAUDE/skills/art-guidance/critique-vs-assist-guardrail/SKILL.md` before formulating every response.** This is Layer 1 of the three-layer guardrail — it is always active with no bypass condition.
