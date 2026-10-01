@@ -101,12 +101,16 @@ The guardrail's response to a prohibited request (a request for critique, verdic
 _Avoid:_ refusal, rejection
 
 **Vision input:**
-Input where the user uploads an image for the agent to observe directly.
+Input where the user uploads an image for the agent to observe directly. When both vision input and self-report are active simultaneously, vision is the primary observational channel — what the agent sees takes precedence over what the user describes for the purpose of forming observations. See **Input channel conflict** below.
 _Avoid:_ image inspection, visual input
 
 **Self-report:**
-Input where the user describes their image in text. The agent matches the description against the failure-mode table and corpus guidance.
+Input where the user describes their image in text. The agent matches the description against the failure-mode table and corpus guidance. When both self-report and vision input are active, self-report is the intentional/contextual channel — it tells the agent where the user's attention is and what they expect to find, not necessarily what is objectively present. See **Input channel conflict** below.
 _Avoid:_ text input, verbal description
+
+**Input channel conflict:**
+The state that exists when vision input and self-report are both active and materially contradict each other. The resolution is: (1) describe what vision shows; (2) note plainly that this differs from the self-report; (3) ask the user to clarify before proceeding with advice. Neither channel is silently discarded. See ADR-0007 for the full protocol.
+_Avoid:_ channel priority, channel override
 
 **Session:**
 A single continuous agent run — from when the tool is invoked until it stops. The pending-entry expiry check runs once per session, before the first user question is answered.
