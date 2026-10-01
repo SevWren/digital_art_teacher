@@ -157,6 +157,20 @@ When prompting the user for a decision on a pending entry (staging check or know
 
 ---
 
+## Handoff document convention
+
+All session handoff documents live in **`docs/historical/`**. No handoff document ever belongs in the repo root or anywhere else. See `docs/adr/0006-handoff-document-location-naming-and-snapshot-standard.md` for the full policy.
+
+**Naming:** `docs/historical/handoff-YYYY-MM-DD.md` (date-first, lowercase kebab-case). Non-session records (project-definition docs): `docs/historical/project-definition-YYYY-MM-DD.md`.
+
+**Every file in `docs/historical/` must open with the Historical Snapshot Banner** — a blockquote that dates the document, warns agents not to treat it as current truth, and directs them to `git log`, GitHub Issues, and the most recent handoff for current context. The banner format is defined in the handoff skill at `CLAUDE/skills/productivity/handoff/SKILL.md`.
+
+**When writing a new handoff:** verify all prior docs in `docs/historical/` already have the banner. Add it to any that are missing before committing the new doc.
+
+**When reading a prior handoff:** treat it as a point-in-time snapshot only. Verify current state against `git log --oneline -5` and open GitHub Issues before acting on anything the handoff describes.
+
+---
+
 ## Agent skills
 
 ### Issue tracker
