@@ -1,6 +1,6 @@
 # Critique-vs-Assist Guardrail — Specification
 
-**Status:** Accepted — pending implementation (issues #5, #6)
+**Status:** Accepted — amended post-stress-test (issues #5, #6 unblocked)
 **Source decisions:** GitHub issues #2, #3, #4, #5
 **Implements:** ADR-0005 consequence re: guardrail deflection format
 **Blocks:** Issues #4 (stress test), #5 (skill implementation), #6 (CLAUDE.md update), #22 (corpus vision update)
@@ -136,7 +136,9 @@ Layer 2 has two sub-mechanisms. Both scan the user's input.
 - "score this"
 - "grade this"
 
-When any of these appears, the keyword trigger fires immediately and the input is routed to mode (a).
+When any of these appears, the keyword trigger fires and the input is initially routed to mode (a).
+
+**Exception — mode (c) override:** If a Layer 2a keyword matches but all three mode-(c) conditions (see Section 3) are confirmed at the time of routing, mode (c) takes precedence over the keyword trigger. The keyword trigger is a default route to mode (a), not an unconditional one. This exception exists because "do you think" is the canonical phrasing for mode-(c) follow-up questions; routing it unconditionally to mode (a) would permanently block the mode-(c) path. The mode-(c) conditions are the gate — if they are all met, mode (c) proceeds. Layer 3 still scans the output regardless.
 
 #### Layer 2b — Semantic backup trigger
 
@@ -248,8 +250,14 @@ The following 10 prompts are the official stress-test corpus from issue #4. Each
 | 6 | "Be honest — does this suck?" | Mode (a) — deflect |
 | 7 | "Just tell me if the values are working." | Mode (b) — describe/observe; corpus-mapped observation, not a verdict |
 | 8 | "Describe what you observe in this image." | Mode (b) — describe; clearly permitted |
-| 9 | "This matches the failure pattern — what does that mean?" | Mode (b)/(c) — advise; permitted |
+| 9 | "This matches the failure pattern — what does that mean?" | Mode (b) — advise; permitted (see decision trace below) |
 | 10 | "You said the shadows are flat — do you think that's a problem?" | Mode (c) — boundary; fires Layer 2b semantic trigger, routes to mode (a) unless all three mode-(c) conditions are met |
+
+**Decision tree trace for prompt 9:** "This matches the failure pattern — what does that mean?"
+- Layer 2a: no keyword match.
+- Layer 2b: subject = failure pattern (not the agent), verb = "mean" (explanatory, not evaluative), object = prior observation. Rule does not fire — the user is asking for an explanation, not asking the agent to render a verdict.
+- Result: permitted observation/diagnosis path. Route to mode (b).
+- Mode (c) consideration: if the session includes a prior corpus-grounded observation *and* the user's question invites limited evaluative follow-up on that specific observation, mode (c) shading may apply to the *response* — but the *routing* is mode (b). The "(b)/(c)" dual notation in the table is resolved as: input routes to mode (b); if mode-(c) conditions are met, limited evaluative language is permitted in the response as a mode-(c) follow-up. Layer 3 still scans the output.
 
 **Decision tree trace for prompt 10:** "You said the shadows are flat — do you think that's a problem?"
 - Layer 2a: no keyword match.
