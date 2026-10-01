@@ -38,7 +38,8 @@ The purpose is to give you a single reference that covers the professional knowl
 • No specific software is required; principles are tool-agnostic.
 • No single style register is prescribed.
 • No assumption that you own high-end calibrated studio hardware.  
-• The AI never sees or edits your image; all visual checks are performed by you.  
+• The AI never sees or edits your image; all visual checks are performed by you.
+> **Annotation (2026-10-01):** Vision input is now available. When vision is active in a session, the AI can observe the image directly and describe what it sees. All aesthetic verdicts and quality judgments remain yours. The observational and diagnostic behaviour is governed by `CLAUDE.md` and the critique-vs-assist guardrail skill.
 
 ### 1.4 Method
 Content follows two axes: (1) theoretical foundations from classical to modern, and (2) a linear production sequence in which each stage receives its governing theory, the actions you take, and the conditions that let you move forward. All numerical and technical claims are tied to published sources listed with full URLs in the Bibliography.
@@ -341,6 +342,7 @@ Practical starting point drawn from the sources: if print is uncertain, beginnin
 ## 7. QUALITY CHECKS AND CRITIQUE (PERFORMED BY YOU)
 
 All checks below are performed by you on your own screen. The AI cannot see your image and will not pretend to.
+> **Annotation (2026-10-01):** Vision input is now available. When vision is active, the AI can observe the image and describe what it sees, supplementing your own checks. All quality judgments remain yours. The AI's observational role and the authorship boundary are governed by `CLAUDE.md` and the critique-vs-assist guardrail skill.
 
 ### 7.1 Step-gate habit
 Do not treat a step as finished until its exit conditions (Section 5) are met. You can review them yourself or ask another person.

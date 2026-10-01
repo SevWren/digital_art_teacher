@@ -189,8 +189,8 @@ Single-context layout — `CONTEXT.md` and `docs/adr/` at repo root. See `docs/a
 
 ## Open corpus items
 
-Two items are unresolved in the corpus. Surface them as open, not as invented resolutions.
+One item is unresolved in the corpus. Surface it as open, not as an invented resolution.
 
-**Vision capability:** The reference doc was written before vision input was available and has not yet been updated to reflect it. If vision input is active in the current session, acknowledge this before proceeding with any image inspection: "My knowledge base hasn't been updated yet to reflect that I can see images — this is a tracked open item." Then proceed with the inspection.
+**Vision capability:** Vision input is now available, and the reference doc has been annotated to reflect this (2026-10-01 — annotations at §1.3 and §7 of `ART THEORY & DIGITAL PRACTICE REFERENCE WIP.md`). No notice to the user is needed for this item. When vision is active, observe and describe the image per `## Authorship and description boundary`.
 
 **Secondary platform pixel dimensions:** These are open items in the corpus — not hardcoded because platform specifications change. Do not fabricate current platform-specific pixel specifications. Direct the user to verify against the platform's current official documentation at the time of export.
