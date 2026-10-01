@@ -56,24 +56,58 @@ art-theory/
 4. When the required knowledge is absent from this tree, state the gap. If the gap is subject-specific (anatomy, construction landmarks, markings, or surface systems for a particular motif), follow `CLAUDE.md` → load `grounded-art-guidance`. Never invent theory.
 5. All new or updated theory promoted from staging must be written into this tree. Update this INDEX whenever a new file is created.
 
-## Current Population Status (work in progress)
+## Current Population Status (updated 2026-10-01)
 
-- Structure and INDEX established.
-- Files present and populated with initial synthesised content:
-  - pipeline/00-overview.md
-  - fundamentals/composition.md
-  - fundamentals/light-and-value.md
-  - fundamentals/colour.md
-  - fundamentals/perspective.md
-  - fundamentals/form-and-construction.md
-  - fundamentals/anatomy-and-gesture.md
-  - digital-practices/workflow-strategies.md
-  - glossary.md
-  - sources.md
-- Remaining pipeline stage files and additional fundamentals remain to be written.
-- Full coverage of every listed file remains an ongoing task. The entire knowledge base is a work in progress.
+All core knowledge files are now written and committed. Every file includes a `## Plain-English Guide` section (ADR-0005 requirement).
+
+### Pipeline — fully populated
+
+| File | Status |
+|---|---|
+| pipeline/00-overview.md | Written + Plain-English Guide |
+| pipeline/01-brief-and-ideation.md | Written + Plain-English Guide |
+| pipeline/02-reference-gathering.md | Written + Plain-English Guide |
+| pipeline/03-thumbnailing-composition.md | Written + Plain-English Guide |
+| pipeline/04-gesture-silhouette.md | Written + Plain-English Guide |
+| pipeline/05-perspective-construction.md | Written + Plain-English Guide |
+| pipeline/06-value-lighting.md | Written + Plain-English Guide |
+| pipeline/07-colour-palette.md | Written + Plain-English Guide |
+| pipeline/08-form-materials.md | Written + Plain-English Guide |
+| pipeline/09-rendering-detail.md | Written + Plain-English Guide |
+| pipeline/10-atmosphere-polish.md | Written + Plain-English Guide |
+| pipeline/11-critique-revision-export.md | Written + Plain-English Guide |
+
+### Fundamentals — fully populated
+
+| File | Status |
+|---|---|
+| fundamentals/composition.md | Written + Plain-English Guide |
+| fundamentals/perspective.md | Written + Plain-English Guide |
+| fundamentals/form-and-construction.md | Written + Plain-English Guide |
+| fundamentals/light-and-value.md | Written + Plain-English Guide |
+| fundamentals/colour.md | Written + Plain-English Guide |
+| fundamentals/anatomy-and-gesture.md | Written + Plain-English Guide |
+| fundamentals/materials-and-texture.md | Written + Plain-English Guide |
+| fundamentals/design-and-shape-language.md | Written + Plain-English Guide |
+
+### Digital practices — fully populated
+
+| File | Status |
+|---|---|
+| digital-practices/workflow-strategies.md | Written + Plain-English Guide |
+| digital-practices/tools-layers-resolution.md | Written + Plain-English Guide |
+| digital-practices/critique-methods.md | Written + Plain-English Guide |
+
+### Support files
+
+| File | Status |
+|---|---|
+| glossary.md | Present |
+| sources.md | Present |
 
 ## Version Notes
 
 - Initial structure created 2026-09-28.
+- Full pipeline (01–11) and all fundamentals/digital-practices written 2026-10-01 (issues #7–#21).
+- Plain-English Guide sections added to all files 2026-10-01 (issue #29).
 - This INDEX is the single source of truth for the layout. Update it whenever the tree changes.
