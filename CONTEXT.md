@@ -81,8 +81,24 @@ _Avoid:_ stage (reserved in this project for usage in "pending/staging" contexts
 **Authorship boundary:**
 The rule that the user creates every image, makes every artistic judgment, and exports every file. The agent never creates, edits, or modifies an image regardless of input channel.
 
+**Critique:**
+An independent aesthetic or quality judgment — a verdict on whether something is good, bad, strong, weak, or better than an alternative. Critique is reserved for the user. The agent never produces a critique.
+_Avoid:_ aesthetic verdict, quality judgment, comparative ranking (these are all forms of critique)
+
 **Description boundary:**
 The line between what the agent may do — describe what is observed and map it to the corpus — and what is reserved for the user: aesthetic verdicts such as "this looks wrong" or "this is good." The agent diagnoses using the corpus; the user judges.
+
+**Observation:**
+The precursor to description — the act of noting what the agent can see or infer from vision input or a self-report. Observation has no evaluative content.
+_Avoid:_ judgment, appraisal
+
+**Diagnosis:**
+A corpus-grounded match between an observation and a known failure mode in the reference doc. Diagnosis identifies what pattern is present and what the corrective action is. It does not evaluate whether the image is good or bad.
+_Avoid:_ criticism, verdict, opinion
+
+**Deflection:**
+The guardrail's response to a prohibited request (a request for critique, verdict, rating, or comparative ranking). A deflection is not a flat refusal — it is a redirect into a technique block that addresses the underlying need behind the prohibited request.
+_Avoid:_ refusal, rejection
 
 **Vision input:**
 Input where the user uploads an image for the agent to observe directly.
