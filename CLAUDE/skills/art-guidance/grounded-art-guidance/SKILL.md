@@ -19,11 +19,11 @@ Name each Tier 1 file checked. State the specific subject the user is asking abo
 
 Say to the user:
 
-> "I don't have [subject-specific knowledge] in the corpus. I can search the web for it — want me to?"
+> "I don't have anything about [subject-specific knowledge] in my knowledge base. I can search the web for it — want me to?"
 
 Wait for an explicit yes or no. Do not proceed to step 3 without a yes.
 
-- **No:** State the gap clearly. Surface any adjacent universal-principle guidance from the corpus that partially applies — construction from primary forms (`fundamentals/form-and-construction.md`), gesture (`fundamentals/anatomy-and-gesture.md`), value structure (`fundamentals/light-and-value.md`). End the skill.
+- **No:** Acknowledge the gap in plain English — do not reference corpus file paths or section numbers in the user-facing response. Surface any adjacent universal-principle guidance that partially applies (construction from primary forms, gesture and anatomy fundamentals, value and lighting structure) by reading the relevant files internally and translating the guidance into plain English. End the skill.
 - **Yes:** Proceed to step 3.
 
 **Done when:** user has given an explicit yes or no.
@@ -106,12 +106,18 @@ Evaluate each check against the staged entry. Write PASS, FAIL, or FLAG and a no
 
 Show the user in sequence:
 
-1. The retrieved content (from the staging entry's "Retrieved content" field)
-2. The check results table
-3. Plain-language explanation of any FAIL or FLAG: what it means and why it matters
-4. This prompt: "Do you want to **approve** this for the knowledge base, **reject** it, or **defer** the decision?"
+1. The retrieved content (from the staging entry's "Retrieved content" field), in plain English.
+2. A plain-language summary of the source check (do NOT show the raw check table to the user). Use this form:
+   - If all checks passed: "I found enough good independent sources to feel confident about this."
+   - If source count FAIL: "I only found [N] source(s) for this — that's not enough to trust it fully."
+   - If source quality FAIL: "Some of the sources I found aren't from reliable publications — that reduces my confidence."
+   - If conflict FLAG: "This conflicts with something already in my knowledge base: [plain-English description of what conflicts]. I can still add it, but you'd need to decide which is right."
+   - Other FAILs or FLAGs: describe the issue in one plain sentence without using check names or ICL labels.
+3. This prompt — use UCL forms, not ICL workflow terms:
+   - If all checks passed: "Want me to add this to my knowledge base, skip it, or set it aside for now?"
+   - If any FAIL or FLAG: "Given the above, would you like to add it anyway, skip it, or set it aside for now?"
 
-**Done when:** user has given one of the three responses: approve, reject, or defer.
+**Done when:** user has given one of the three responses.
 
 ---
 
@@ -121,7 +127,7 @@ Show the user in sequence:
 
 **Before writing anything:** if the Conflict check result is FLAG, present this warning to the user:
 
-> **Conflict warning:** This entry contradicts [name the specific claim] in [name the Tier 1 file and section]. Promoting it will introduce a contradiction into the corpus. Proceeding at your explicit direction — you will need to resolve this conflict manually after promotion.
+> **Heads up:** This contradicts something already in my knowledge base — specifically, [plain-English description of what conflicts]. I can still add it, but you would need to decide which is correct afterwards.
 
 Then proceed with promotion regardless of whether the Conflict check passed or failed.
 
