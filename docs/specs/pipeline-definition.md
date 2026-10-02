@@ -4,7 +4,7 @@
 **Status:** Revised — Scope expanded to include manga, line art, and B&W drawing (hold response 2026-10-02)
 **Blocks:** Issues #7–#17 (pipeline step files may now be written — pending owner confirmation)
 **Gap analysis:** `docs/specs/pipeline-gap-analysis.md`
-**Sources:** 9 independent professional sources — see Section 5
+**Sources:** 10 independent professional sources — see Section 5
 
 > **Owner confirmation required.** This document presents the confirmed pipeline structure and findings from external research. Pipeline step files (#7–#17) must NOT be started until the owner has reviewed this document and confirmed the structure in a comment on GitHub issue #36.
 
@@ -372,3 +372,4 @@ Net: 13 → 11 via 3 merges, 1 split, 1 expansion.
 7. Artur Ledur / FornoFX via 80.lv. "Creating Alien Character for Sci-Fi Short Film with Blender." https://80.lv/articles/creating-an-alien-character-for-a-sci-fi-short-film-with-blender-substance-3d — Retrieved 2026-10-02.
 8. Wikipedia. "Line Art." https://en.wikipedia.org/wiki/Line_art — Retrieved 2026-10-02. Covers hatching, stippling, screentone, and pen-and-ink techniques; confirms line art uses the same compositional and structural foundations as painted work.
 9. Scott Drummond via Clip Studio Art Rocket. "Inking Superhero Comics in Clip Studio Paint." https://www.clipstudio.net/how-to-draw/archives/156630 — Retrieved 2026-10-02. Professional American comic artist workflow: pencil rough → brush/G-pen/multiliner inking → line weight for light direction → spotted blacks for value → feathering for tone gradation → export at 600 DPI. Confirms all 11 pipeline steps apply to comics/line art work.
+10. Clip Studio Art Rocket. "The Difference Between Digital Manga and Hand-Drawn Manga." https://www.clipstudio.net/how-to-draw/archives/155309 — Retrieved 2026-10-02. Explicitly states the canonical manga creation workflow as: Storyboard → Base → Inking → Finishing Details (Coloring/Adding Tone/Adding Highlights). Covers screentone application, effect lines, panel frames, solid black fill (spotted blacks). Maps to: Storyboard=Steps 01–03, Base=Steps 04–05, Inking=Steps 06+09, Finishing=Steps 07–10. Confirms pipeline applies to both digital and hand-drawn manga.
