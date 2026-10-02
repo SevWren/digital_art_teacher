@@ -60,8 +60,8 @@ art-theory/
 | pipeline/03-thumbnailing-composition.md | **Removed — pending #36** |
 | pipeline/04-gesture-silhouette.md | **Removed — pending #36** |
 | pipeline/05-perspective-construction.md | **Removed — pending #36** |
-| pipeline/06-value-lighting.md | **Removed — pending #36** |
-| pipeline/07-colour-palette.md | **Removed — pending #36** |
+| pipeline/06-value-line-hierarchy.md | **Removed — pending #36** |
+| pipeline/07-colour-tone-pass.md | **Removed — pending #36** |
 | pipeline/08-form-materials.md | **Removed — pending #36** |
 | pipeline/09-rendering-detail.md | **Removed — pending #36** |
 | pipeline/10-atmosphere-polish.md | **Removed — pending #36** |

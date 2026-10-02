@@ -29,11 +29,11 @@ Starting with fine detail — textures, colour, small features — before the la
 |---|-------|---------------------------|---------------------------|
 | 01 | Brief & Ideation | What must this image achieve and for whom? | Design / Shape language, Composition |
 | 02 | Reference Gathering | What visual evidence do I need? | All fundamentals (observation) |
-| 03 | Thumbnailing & Composition | What is the strongest arrangement of major shapes? | Composition, Design |
+| 03 | Thumbnailing & Composition | What is the strongest arrangement of major shapes and panels? | Composition, Design |
 | 04 | Gesture / Silhouette | Does the pose or major form read clearly at a distance? | Anatomy & Gesture, Form |
 | 05 | Perspective & Construction | Do the forms sit convincingly in space? | Perspective, Form & Construction |
-| 06 | Value / Lighting | Is the light design clear and hierarchical? | Light & Value |
-| 07 | Colour & Palette | Do the colours support hierarchy and mood? | Colour |
+| 06 | Value / Line Hierarchy | Is the light design (or line weight plan) clear and hierarchical? | Light & Value |
+| 07 | Colour / Tone Pass | Do the colours or tones support hierarchy and mood? | Colour |
 | 08 | Form & Materials | Do surfaces respond correctly to the light? | Materials & Texture, Form |
 | 09 | Rendering & Detail | Where does the eye rest and where does it travel? | Composition, Light & Value |
 | 10 | Atmosphere & Polish | Are depth, focus, and final adjustments coherent? | Perspective (atmospheric), Colour, Light |
