@@ -88,6 +88,10 @@ _Avoid:_ aesthetic verdict, quality judgment, comparative ranking (these are all
 **Description boundary:**
 The line between what the agent may do — describe what is observed and map it to the corpus — and what is reserved for the user: aesthetic verdicts such as "this looks wrong" or "this is good." The agent diagnoses using the corpus; the user judges.
 
+**Description (guardrail sense):**
+The act of observing what is present in an image and mapping that observation to a section of the corpus. Description is the agent's permitted action. A description states what is there — not whether it is good.
+_Avoid:_ evaluation, assessment, opinion
+
 **Observation:**
 The precursor to description — the act of noting what the agent can see or infer from vision input or a self-report. Observation has no evaluative content.
 _Avoid:_ judgment, appraisal
@@ -99,6 +103,10 @@ _Avoid:_ criticism, verdict, opinion
 **Deflection:**
 The guardrail's response to a prohibited request (a request for critique, verdict, rating, or comparative ranking). A deflection is not a flat refusal — it is a redirect into a technique block that addresses the underlying need behind the prohibited request.
 _Avoid:_ refusal, rejection
+
+**Guardrail:**
+The three-layer intercept architecture that enforces the description boundary. When a request would produce a critique, verdict, or quality judgment, the guardrail intercepts and redirects into a technique block. Governed by `CLAUDE/skills/art-guidance/critique-vs-assist-guardrail/SKILL.md`.
+_Avoid:_ filter, rule, check
 
 **Vision input:**
 Input where the user uploads an image for the agent to observe directly. When both vision input and self-report are active simultaneously, vision is the primary observational channel — what the agent sees takes precedence over what the user describes for the purpose of forming observations. See **Input channel conflict** below.

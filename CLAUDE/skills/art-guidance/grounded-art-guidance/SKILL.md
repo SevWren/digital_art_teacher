@@ -11,7 +11,7 @@ Two-tier retrieval protocol for subject-specific knowledge absent from Tier 1. C
 
 Name each Tier 1 file checked. State the specific subject the user is asking about. Confirm the knowledge is absent.
 
-**Done when:** the response contains: "Checked [file(s)]. [Subject] [anatomy / construction landmarks / surface systems] is not present in Tier 1."
+**Done when:** the response contains: "Checked [file(s)]. [Subject] [anatomy / construction landmarks / surface systems] is not in my knowledge base."
 
 ---
 
