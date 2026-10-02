@@ -56,10 +56,7 @@ Understanding how digital painting software stores and organises your image is n
 
 ## Relationship to Pipeline
 
-These concepts are active from the first moment of the pipeline (stage 5.0, project definition) and remain operative through the final export (stage 5.12). Canvas size, colour space, and bit depth must be set at stage 5.0 before the first construction mark. Layer habits apply at every subsequent stage. The final export (stage 5.12) requires the master layered file to be intact at full resolution, with a separately exported flattened delivery file matching the technical requirements of the output goal.
-
-Adjustment layers are particularly relevant at stage 5.11 (final pass and global adjustments), where global brightness, contrast, and colour balance corrections are made without touching the underlying painting.
-
+_Pipeline step relationships pending #36 validation. This section will be updated once the confirmed pipeline structure exists._
 ---
 
 ## Plain-English Guide

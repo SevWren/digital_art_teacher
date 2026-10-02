@@ -36,8 +36,7 @@ Colour is organised along three perceptual axes: hue, value (lightness), and sat
 
 ## Relationship to Pipeline
 
-Colour is the primary concern of stage 07 and continues to be refined through stages 09–10. The colour study should be evaluated against the earlier value study; if the colour version destroys the value hierarchy, the colour must be adjusted or the value structure revisited.
-
+_Pipeline step relationships pending #36 validation. This section will be updated once the confirmed pipeline structure exists._
 ## Plain-English Guide
 
 > **Who this is for:** Someone opening a digital painting app for the first time with no formal art training.

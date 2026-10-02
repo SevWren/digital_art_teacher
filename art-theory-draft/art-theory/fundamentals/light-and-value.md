@@ -51,8 +51,7 @@ Describe light direction with clock position (viewer’s perspective) and elevat
 
 ## Relationship to Pipeline
 
-Value and lighting are the primary concern of stage 06 and remain the structural backbone for stages 07–10. The value study is a primary source that later colour and rendering stages should respect.
-
+_Pipeline step relationships pending #36 validation. This section will be updated once the confirmed pipeline structure exists._
 ## Plain-English Guide
 
 > **Who this is for:** Someone opening a digital painting app for the first time with no formal art training.

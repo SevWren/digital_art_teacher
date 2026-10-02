@@ -79,14 +79,7 @@ Texture marks must be lighter on the light side of the form and darker on the sh
 
 ## Relationship to Pipeline
 
-Materials and texture work spans two adjacent pipeline stages:
-
-- **Form rendering and lighting (stage 5.8):** This is where the macro-form value structure is refined and where material cues begin — specifically, where the highlight is sized and sharpened or softened according to the surface's roughness. The distinction between a matte and a glossy reading is primarily established here.
-
-- **Texture, surface detail, and micro-structure (stage 5.9):** This is where directional mark-making and surface character are added on top of the already-resolved macro-form. Texture work at this stage should never undo the form structure built in the previous stage.
-
-Both stages share the same dependency: the value structure from the value-study pass (stage 5.6) is the authority. Color and texture always serve that foundation.
-
+_Pipeline step relationships pending #36 validation. This section will be updated once the confirmed pipeline structure exists._
 ---
 
 ## Plain-English Guide

@@ -46,8 +46,7 @@ When a form is oriented toward or away from the viewer, its projected length sho
 
 ## Relationship to Pipeline
 
-Perspective is the primary concern of stage 05 (construction) and continues to affect stages 06–10 through the placement of light, the behaviour of atmosphere, and the relative scale of elements. Construction drawings that lock perspective become primary sources for later stages.
-
+_Pipeline step relationships pending #36 validation. This section will be updated once the confirmed pipeline structure exists._
 ---
 
 ## Plain-English Guide

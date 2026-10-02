@@ -19,18 +19,8 @@ Every response that draws on this base must name the specific file(s) consulted.
 art-theory/
 ├── INDEX.md                          ← this file
 ├── pipeline/                         ← ordered process knowledge
-│   ├── 00-overview.md
-│   ├── 01-brief-and-ideation.md
-│   ├── 02-reference-gathering.md
-│   ├── 03-thumbnailing-composition.md
-│   ├── 04-gesture-silhouette.md
-│   ├── 05-perspective-construction.md
-│   ├── 06-value-lighting.md
-│   ├── 07-colour-palette.md
-│   ├── 08-form-materials.md
-│   ├── 09-rendering-detail.md
-│   ├── 10-atmosphere-polish.md
-│   └── 11-critique-revision-export.md
+│   ├── 00-overview.md                ← unvalidated internal spec; see #36
+│   └── [01–11 step files removed — pending #36 pipeline validation]
 ├── fundamentals/                     ← theory that governs every stage
 │   ├── composition.md
 │   ├── perspective.md
@@ -56,26 +46,26 @@ art-theory/
 4. When the required knowledge is absent from this tree, state the gap. If the gap is subject-specific (anatomy, construction landmarks, markings, or surface systems for a particular motif), follow `CLAUDE.md` → load `grounded-art-guidance`. Never invent theory.
 5. All new or updated theory promoted from staging must be written into this tree. Update this INDEX whenever a new file is created.
 
-## Current Population Status (updated 2026-10-01)
+## Current Population Status (updated 2026-10-02)
 
-All core knowledge files are now written and committed. Every file includes a `## Plain-English Guide` section (ADR-0005 requirement).
+**Pipeline step files removed 2026-10-02.** Issues #7–#17 (pipeline/01–11) were written before issue #36 (comprehensive pipeline validation gate) was completed. Those files have been rolled back pending #36. See GitHub Issue #36.
 
-### Pipeline — fully populated
+### Pipeline — blocked on #36
 
 | File | Status |
 |---|---|
-| pipeline/00-overview.md | Written + Plain-English Guide |
-| pipeline/01-brief-and-ideation.md | Written + Plain-English Guide |
-| pipeline/02-reference-gathering.md | Written + Plain-English Guide |
-| pipeline/03-thumbnailing-composition.md | Written + Plain-English Guide |
-| pipeline/04-gesture-silhouette.md | Written + Plain-English Guide |
-| pipeline/05-perspective-construction.md | Written + Plain-English Guide |
-| pipeline/06-value-lighting.md | Written + Plain-English Guide |
-| pipeline/07-colour-palette.md | Written + Plain-English Guide |
-| pipeline/08-form-materials.md | Written + Plain-English Guide |
-| pipeline/09-rendering-detail.md | Written + Plain-English Guide |
-| pipeline/10-atmosphere-polish.md | Written + Plain-English Guide |
-| pipeline/11-critique-revision-export.md | Written + Plain-English Guide |
+| pipeline/00-overview.md | Present — unvalidated internal spec pending #36 |
+| pipeline/01-brief-and-ideation.md | **Removed — pending #36** |
+| pipeline/02-reference-gathering.md | **Removed — pending #36** |
+| pipeline/03-thumbnailing-composition.md | **Removed — pending #36** |
+| pipeline/04-gesture-silhouette.md | **Removed — pending #36** |
+| pipeline/05-perspective-construction.md | **Removed — pending #36** |
+| pipeline/06-value-lighting.md | **Removed — pending #36** |
+| pipeline/07-colour-palette.md | **Removed — pending #36** |
+| pipeline/08-form-materials.md | **Removed — pending #36** |
+| pipeline/09-rendering-detail.md | **Removed — pending #36** |
+| pipeline/10-atmosphere-polish.md | **Removed — pending #36** |
+| pipeline/11-critique-revision-export.md | **Removed — pending #36** |
 
 ### Fundamentals — fully populated
 
@@ -108,6 +98,7 @@ All core knowledge files are now written and committed. Every file includes a `#
 ## Version Notes
 
 - Initial structure created 2026-09-28.
-- Full pipeline (01–11) and all fundamentals/digital-practices written 2026-10-01 (issues #7–#21).
-- Plain-English Guide sections added to all files 2026-10-01 (issue #29).
+- Fundamentals and digital-practices files written 2026-10-01 (issues #18–#21).
+- Plain-English Guide sections added to pre-existing files 2026-10-01 (issue #29).
+- Pipeline step files (01–11) written 2026-10-01 then rolled back 2026-10-02: those files were committed before issue #36 (pipeline validation gate) was completed. They are removed pending #36.
 - This INDEX is the single source of truth for the layout. Update it whenever the tree changes.

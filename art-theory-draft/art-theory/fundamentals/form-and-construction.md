@@ -47,8 +47,7 @@ Every curved surface can be approximated by a set of planes. Understanding the m
 
 ## Relationship to Pipeline
 
-Form and construction are central to stages 04–05 and remain the structural reference for lighting (stage 06) and materials (stage 08). A stable construction drawing is a primary source that later stages should respect.
-
+_Pipeline step relationships pending #36 validation. This section will be updated once the confirmed pipeline structure exists._
 ## Plain-English Guide
 
 > **Who this is for:** Someone opening a digital painting app for the first time with no formal art training.

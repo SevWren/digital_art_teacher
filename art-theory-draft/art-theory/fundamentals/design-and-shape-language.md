@@ -83,12 +83,7 @@ Gestalt proximity and similarity mean that shapes close together or similar in f
 
 ## Relationship to Pipeline
 
-Shape language and silhouette design are established at stages 5.1–5.3 (ideation, thumbnailing, and compositional exploration) and locked during stage 5.4 (construction drawing). Changes to major shape relationships after the value study are expensive — they require revising the underlying structure, not just adjusting rendering on top.
-
-Shape decisions inform every later stage: the value study (stage 5.6) is built on the shapes established here; edge control (stage 5.11) depends on silhouette clarity; atmospheric integration (stage 5.10) depends on figure-ground relationships that trace back to positive and negative shape design.
-
-If a shape problem is identified during a later stage — a silhouette that fails at thumbnail, a negative space that reads as awkward — the correct correction is to return to the construction drawing layer and revise there, then re-derive the subsequent stages. Trying to paint over a structural shape problem is one of the most common causes of a finished piece that never looks right despite technically correct rendering.
-
+_Pipeline step relationships pending #36 validation. This section will be updated once the confirmed pipeline structure exists._
 ---
 
 ## Plain-English Guide

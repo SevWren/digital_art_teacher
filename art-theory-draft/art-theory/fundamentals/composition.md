@@ -37,8 +37,7 @@ Proximity, similarity, continuity, closure, and figure–ground relationships de
 
 ## Relationship to Pipeline
 
-Composition is the primary concern of stages 01–03 and remains the reference for all later stages. Changes to major shape relationships after the value study are expensive and should be treated as a conscious return to an earlier stage.
-
+_Pipeline step relationships pending #36 validation. This section will be updated once the confirmed pipeline structure exists._
 ## Plain-English Guide
 
 > **Who this is for:** Someone opening Procreate, Krita, Photopea, or Photoshop for the first time with no formal art training.

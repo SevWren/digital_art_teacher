@@ -40,8 +40,7 @@ Focus on landmarks and mass relationships rather than medical nomenclature:
 
 ## Relationship to Pipeline
 
-Gesture is the primary concern of stage 04; anatomical construction continues through stage 05. Both remain references for lighting and material stages. When the user is working on a figurative image, load this file together with `form-and-construction.md` and `perspective.md`.
-
+_Pipeline step relationships pending #36 validation. This section will be updated once the confirmed pipeline structure exists._
 ## Plain-English Guide
 
 > **Who this is for:** Someone opening a digital painting app for the first time with no formal art training.
